@@ -1,0 +1,20 @@
+.top-bar{
+    background-color: blue;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+#search-bar{
+    background-color: white;
+    margin-top: 20;
+    font-size: 15px;
+    width: 300px;
+    padding: 6px; 
+    border-radius: 10px;
+    font-size: 15px;
+    width: 300px;
+}

@@ -1,21 +1,31 @@
 const { spawn } = require('child_process');
 
-const childPython = spawn('python', ['hello.py']);
+let searchTerm = '';
 
-const inputString = 'SUPAH';
+function setSearchTerm(term) {
+  searchTerm = term;
+  getSearchTerm();
+}
 
-childPython.stdin.write(inputString);
-childPython.stdin.end();
+function getSearchTerm() {
+  console.log(searchTerm);
+  callPython();
+  return searchTerm;
+}
 
-childPython.stdout.on('data', (data) => {
+function callPython() {
+  const childPython = spawn('python', ['hello.py', searchTerm]);
+
+  childPython.stdout.on('data', (data) => {
     console.log(`stdout: ${data}`);
-});
+  });
 
-childPython.stderr.on('data', (data) => {
+  childPython.stderr.on('data', (data) => {
     console.error(`stderr: ${data}`);
-});
+  });
 
-childPython.on('exit', (code) => {
+  childPython.on('exit', (code) => {
     console.log(`child process exited with code ${code}`);
-});
-
+  });
+}
+module.exports = { setSearchTerm, getSearchTerm };

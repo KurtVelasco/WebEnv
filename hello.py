@@ -1,2 +1,2 @@
-input_string = input()
-print("Received input:", input_string)
+import sys
+print("Received input:", str(sys.argv[1]))
