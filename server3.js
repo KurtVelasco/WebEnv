@@ -50,8 +50,7 @@ app.get('/download', (req, res) => {
 
 app.post('/search', (req, res) => { 
   const searchTerm = req.body.searchTerm;
-  console.log('Search term:', searchTerm);
-  setSearchTerm(searchTerm);
+  console.log('Search term:', searchTerm); 
 });
 
 app.listen(port, () => {
