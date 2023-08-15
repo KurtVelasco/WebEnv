@@ -1,0 +1,104 @@
+.slider-container{
+  
+}
+.picture-slider-1 {
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    margin-right: 30px;  
+    overflow: hidden;
+    margin-left: auto; 
+    border: 1px solid black; 
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
+  }
+.slider-desc{
+    background-color: #0c98ed;
+    z-index: 2;
+    margin-top: -10px;
+    font-family: sans-serif;  
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 15px;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
+  .image-container{
+    width: -1500px;
+    height: 300px;
+    clear: both;
+    position: relative;
+    display: flex;
+    transition: right 2s;
+    right :300px;
+  }
+  .slider-button {
+    height: 40px;
+    margin-left: auto;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    z-index: 2;
+    opacity: 50%;
+  }
+  
+  .left-button {
+    left: 10px;
+  }
+  
+  .right-button {
+    margin-left: 100px;
+    right: 10px;
+  }
+
+/*          ACTUAL MEMES                   */
+  .picture-slider-2 {
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    margin-right: 30px;  
+    overflow: hidden;
+    margin-left: auto; 
+    border: 1px solid black; 
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
+  }
+  .image-container-2{
+    width: -1500px;
+    height: 300px;
+    clear: both;
+    position: relative;
+    display: flex;
+    transition: right 2s;
+    right :300px;
+  }
+  .slider-button-2 {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    border: none;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  .left-button {
+    left: 10px;
+  }
+  
+  .right-button {
+    margin-left: 100px;
+    right: 10px;
+  }

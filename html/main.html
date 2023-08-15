@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="stylesheet" href ="/css/mainSliderbar.css"/>
+        <link rel="stylesheet" href ="/css/main.css"/>
+        <link rel="stylesheet" href ="/css/mainTopbar.css"/>
+    </head>
+
+    <!---id/others = camelCase // class lowercase with dash-->
+
+    <video id="bg-video" autoplay loop muted>
+      <source src="https://ba.vod.nexoncdn.co.kr/bg/comu.mp4" type="video/mp4">
+    </video>
+    <audio id="music-player" >
+        <source src="" type="audio/mp3">
+    </audio>
+    
+    <body class="entire-web">  
+         
+        <div class="main-top-bar">
+
+            <div class="website-logo">
+               <img src="https://nxm-clw-cdn.dn.nexoncdn.co.kr/bluearchive/img/brand/gl/gnb_logo_b_en.png">
+            </div> 
+            
+            <div class="top-bar">
+                <form class="left-bar-search" action="/search" method="POST">
+                  <input id="search-bar" type="text" name="searchTerm" placeholder="name...">
+                  <button type="submit">Submit</button>
+                </form>          
+            </div>
+                
+            </div>
+
+            <div>
+
+            </div>
+            
+            
+        </div>   
+        
+
+        
+
+
+        <div class="slider-container">
+            <div class="picture-slider-1">
+              <h1 class="slider-desc">PROGRESS</h1>
+              <button class="slider-button left-button" onclick="slideLeft()">&#8249;</button>
+              <button class="slider-button right-button" onclick="slideRight()">&#8250;</button>
+              <div class="image-container">
+                <img src="https://storage.modworkshop.net/users/images/uaTtAcGmvIXN2mHRMXjrSS1TYmOpDO8aRYHR0jmp.webp" />
+                <img src="https://i.redd.it/9n8nz9iykyy71.png" />
+                <img src="https://static.tvtropes.org/pmwiki/pub/images/fgo_rate_up_1.PNG" />           
+              </div>         
+            </div>
+    
+            <div class="picture-slider-2">
+              <h1 class="slider-desc">PROGRESS</h1>
+              <button class="slider-button-2 left-button" onclick="slideLeft()">&#8249;</button>
+              <button class="slider-button-2 right-button" onclick="slideRight2()">&#8250;</button>
+              <div class="image-container-2">
+                <img src="https://media.tenor.com/MZvzZySG49EAAAAC/don-quixote-skill-issue-don-quixote-limbus-company.gif" />
+                <img src="https://preview.redd.it/5vqmrq4yq5gb1.png?width=960&crop=smart&auto=webp&s=6a4036cc04bca6b6515963fa627fbeb63801384b" />
+                <img src="https://i.redd.it/6fp4q4w71ara1.png" />           
+              </div>         
+            </div>
+        </div>
+
+       
+        
+        <script src ="/js/mainSlider.js"></script>
+        <script src ="app.js"></script>
+        <script src ="windowSlider.js"></script>
+    </body>
+
+
+
+</html>

@@ -8,16 +8,16 @@ function setSearchTerm(term) {
 }
 
 function getSearchTerm() {
-  console.log(searchTerm);
+  console.log('Youtube link: ' + searchTerm);
   callPython();
-  return searchTerm;
+  //return searchTerm;
 }
 
 function callPython() {
-  const childPython = spawn('python', ['hello.py', searchTerm]);
+  const childPython = spawn('python', ['youtube2Mp3.py', searchTerm]);
 
   childPython.stdout.on('data', (data) => {
-    console.log(`stdout: ${data}`);
+    console.log(`${data}`);
   });
 
   childPython.stderr.on('data', (data) => {
